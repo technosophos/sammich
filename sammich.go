@@ -79,7 +79,7 @@ func main() {
 		}
 	}
 
-	dest := fmt.Sprintf("%s_%s_map.go", k, v)
+	dest := fmt.Sprintf("%s_%s_map.go", strings.ToLower(k), strings.ToLower(v))
 	file, err := os.Create(dest)
 	if err != nil {
 		fmt.Printf("Could not create %s: %s\n", dest, err)

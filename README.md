@@ -32,7 +32,7 @@ Then run `go generate` on that file. It will create a file named
 The header you use in go generate should look like this:
 
 ```
-//go generate COLLECTION TYPE [TYPE] [EXTRA_PACKAGES...]
+//go:generate COLLECTION TYPE [TYPE] [EXTRA_PACKAGES...]
 ```
 
 - Maps take two types: `go:generate smap KeyType ValueType`
